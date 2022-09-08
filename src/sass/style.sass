@@ -1,0 +1,543 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+
+
+*
+    box-sizing: border-box
+
+$background-all: #F5F5F5
+$background-cards: #ffffff
+
+
+html
+    background: #F5F5F5
+
+
+
+.container
+    width: 1294px
+    margin: 0 auto
+
+
+.first-section
+    margin-bottom: 75px
+    &__nav-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        height: 80px
+        margin-bottom: 28px
+    &__logo
+        width: 170px
+        height: 21px
+
+
+        
+.vector
+    width: 14px
+    height: 26px
+
+.nav-menu
+    display: flex
+    justify-content: center
+    &__text-list
+        display: flex
+        flex-direction: row
+        align-items: center
+
+    &__list-item
+        margin-right: 33px
+        text-transform: uppercase
+        font-size: 14px
+        &:nth-child(2)
+            margin-right: 3px
+            img
+                margin-right: 35px
+            
+        &:last-child
+            margin-right: 0px
+
+    &__icon-list
+        width: 110px
+
+    &__icon-item
+        margin-right: 13px
+        &:last-child
+            margin-right: 0px
+    
+.content-container
+    position: relative
+    width: 1294px
+    display: flex
+    flex-direction: row
+    background: #DCE5E2
+    border-radius: 32px
+    padding-left: 19px
+    padding-right: 19px
+    &__vector-block
+        display: flex
+        align-items: center
+    &__hr-block
+        display: flex
+        flex-direction: row
+        position: absolute
+        top: 514px
+        left: 322px
+    &__hr-item
+        margin-right: 34px
+        &:last-child
+            margin-right: 0px
+
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Readex Pro', sans-serif
+    font-weight: 400
+
+p, li, span
+    font-family: 'Inter', sans-serif
+    font-weight: 400
+
+
+        
+.left-wrapper
+    max-width:647px
+    padding: 145px 0px 0px 25px
+    &__title
+        font-size: 58px
+        font-family: 'Readex Pro'
+        font-weight: 400
+        margin-bottom: 19px
+    &__text
+        font-size: 16px
+        margin-bottom: 30px
+    &__button
+        width: 170px
+        height: 50px
+        border-radius: 200px
+        border: 1px solid black
+
+.right-wrapper
+    max-width: 647px
+    &__img
+        //  width: 673px
+        width: 647px
+        height: 550px
+
+
+
+hr
+    width: 194px
+    border: none
+    border-top: 2px solid black
+    height: 2px
+        
+
+.second-section
+    // padding-top: 47px
+    margin-bottom: 78px
+    // min-height: 1018px
+    &__content-container
+        display: flex
+        flex-direction: row
+        min-height: 792px
+    &__left-wrapper
+        display: flex
+        flex-direction: column
+        margin-right: 16px
+    &__right-wrapper
+        display: flex
+        flex-direction: row
+    &__text-container
+        text-align: center
+        margin-bottom: 55px
+    &__title
+        margin-bottom: 9px
+    &__laptop
+        display: flex
+        justify-content: center
+        width: 639px
+        height: 472px
+        border-radius: 32px
+        background: $background-cards
+        margin-bottom: 72px
+        filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25))
+        &__content-box
+            width: 555px
+            height: 472px
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            flex-direction: column
+        &__img
+            width: 500px
+            height: 377px
+        &__text
+            // margin-bottom: 19px
+            font-size: 15px
+        &__text_box-content
+            display: flex
+            justify-content: flex-end
+            align-items: flex-end
+            flex-direction: column
+            width: 555px
+            height: 80px
+        &__desc-title
+            font-size: 32px
+
+
+    &__smart-watch
+        display: flex
+        justify-content: center
+        background-color: $background-cards
+        width: 639px
+        height: 270px
+        border-radius: 32px
+        filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25))
+        &__content-box
+            width: 555px
+            height: 270px
+            display: flex
+            flex-direction: row
+        &__img
+            width: 381px
+        &__text_box
+            display: flex
+            align-items: center
+        &__text_box-content
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: flex-end
+            width: 174px
+            height: 95px
+    &__iphone
+        padding-top: 144px
+        // padding-left: 16px
+        width: 312px
+        height: 792px
+        margin-right: 16px
+        filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25))
+        &__img
+            margin-bottom: 41px
+            padding-left: 16px
+        &__content-box
+            display: flex
+            justify-content: flex-end
+            flex-direction: column
+        &__text_box
+            display: flex
+            justify-content: center
+        &__text_box-content
+            text-align: center
+            display: flex
+            flex-direction: column
+            align-items: center
+    &__tablet
+        width: 312px
+        height: 792px
+        display: flex
+        justify-content: center
+        align-items: center
+        &__content-box
+        &__text_box
+            display: flex
+            justify-content: center
+            margin-bottom: 41.89px
+        &__text_box-content
+            text-align: center
+            display: flex
+            flex-direction: column
+            align-items: center
+
+
+
+
+
+
+.title
+    font-size: 42px
+
+.text
+    font-size: 14px
+
+
+.box
+    background: $background-cards
+    border-radius: 32px
+    filter: drop-shadow(0px 4px 35px rgba(0, 0, 0, 0.25))
+
+.box-text
+    font-size: 15px
+
+
+.box-title
+    font-size: 32px
+
+.third-section
+    margin-bottom: 47px
+    &__text-container
+        text-align: center
+        margin-bottom: 59px
+    &__title
+        margin-bottom: 9px
+    &__box-content
+        display: flex
+        flex-direction: row
+    &_box
+        margin-right: 28px
+        width: 303px
+        background: #FFFFFF
+        height: 396px
+    &__img-box
+        margin-bottom: 37px
+        display: flex
+        justify-content: center
+    &__macbook-pro
+        &_text
+            margin-bottom: 25px !important
+        
+
+
+.title3
+    font-size: 22px
+    margin-bottom: 9px
+
+.text3
+    font-size: 14px
+    margin-bottom: 8px
+
+.text-price
+    font-size: 18px
+
+.text-box3
+    width: 302.5px
+
+
+.fourth-section
+    min-height: 663px
+    &__title
+        margin-bottom: 9px
+    &__text-container
+        text-align: center
+        margin-bottom: 56px
+    &__box-content
+        display: flex
+        flex-direction: row
+    &__box
+        margin-right: 28px
+        padding-top: 41px
+        width: 413px
+        height: 453px
+    &__watches-box
+
+
+        
+
+
+.btn
+    font-size: 18px
+    width: 190px
+    height: 50px
+    border-radius: 200px
+    border: 1px solid #000000
+    margin-bottom: 30px
+
+.card-content4
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.text4
+    font-size: 13px
+
+.title4
+    font-size: 28px
+    margin-bottom: 30px
+
+
+.fifth-section
+    padding-top: 47px
+    min-height: 728px
+    &__text-container
+        text-align: center
+    &__title
+        margin-bottom: 9px
+    &__text
+        margin-bottom: 56px
+    &__box-content
+        display: flex
+        flex-direction: row
+        margin-bottom: 73px
+    &__left-wrapper
+        margin-right: 35px
+    &__img
+        border-radius: 16px
+    &__wrapper-text
+        font-size: 24px
+        margin-bottom: 28px
+    &__see-all
+        display: flex
+        justify-content: center
+        margin-right: 7.31px
+        &__text
+            font-size: 24px
+        &__img
+            vertical-align: middle
+
+
+.sixth-section
+    padding-top: 51px
+    padding-bottom: 19px
+    min-height: 834px
+    &__castom-input
+        position: relative
+    &__search-box
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        margin-bottom: 24px
+    &__form
+        margin-bottom: 18px
+    &__input
+        width: 650px
+        height: 60px
+        border-radius: 100px
+        padding-left: 67px
+        border: 1px solid #C5C5C5
+        &::placeholder
+            color: black
+            font-size: 14px    
+
+    &__icon-box
+        position: absolute
+        left: 20.75px
+        bottom: 18.62px
+    &__buttons-box
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 660px
+        padding-bottom: 7px
+        margin-bottom: 19px
+    &__button
+        min-width: 0px
+        height: 42px
+        border-radius: 200px
+        margin-right: 7px
+        padding: 0 22px 0px 22px
+        font-size: 14px
+        border: 1px solid #C5C5C5
+        background: #FFFFFF
+
+    &__first-line__box
+        display: flex
+        flex-direction: row
+        margin-bottom: 7px
+    &__second-line__box
+        display: flex
+        flex-direction: row
+    &__big-box-card
+        width: 1100px
+        height: 492px
+        display: flex
+        justify-content: center
+        align-items: flex-end
+    &__box-content-card
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 935px
+        height: 450px
+        background: #DCE5E2
+        border-radius: 16px
+        padding-top: 47px
+    &__box-text-card
+        text-align: center
+        margin-bottom: 14px
+    &__title-card
+        margin-bottom: 9px
+    &__text-card
+        font-size: 16px
+    &__img-box
+        margin-bottom: 14px
+    &__box-input-card
+        display: flex
+    &__input-card
+        width: 285px
+        height: 50px
+        padding-left: 32px
+        border: 1px solid #000000
+        border-radius: 54px 0px 0px 54px
+        background: #DCE5E2
+        &::placeholder
+            color: #000000
+            font-size: 14px
+    &__btn-sign-up-card
+        width: 115px
+        height: 50px
+        background: #000000
+        border-radius: 0px 200px 200px 0px
+        color: #ffffff
+        font-size: 14px
+        
+
+
+    
+.footer
+    min-height: 378px
+    padding-top: 29px
+    padding-bottom: 4px
+    &__text-container
+        padding-top: 15px
+        display: flex
+        flex-direction: row
+        margin-bottom: 80px
+    &__first-card
+        width: 394px !important
+        height: 191px
+    &__fifth-card
+    &__card
+        width: 197px
+        height: 191px
+        margin-right: 28px
+        &:last-child
+            margin-right: 0px
+    &__logo
+        margin-bottom: 18px
+    &__title
+        font-size: 22px
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0px
+    &__text
+        margin-bottom: 14px
+        font-size: 17px
+        &:last-child
+            margin-bottom: 0px
+    &__hr
+        width: 1350px
+        border: 1px #DCE5E2
+    &__made-by_box
+        padding-top: 52px
+        display: flex
+        justify-content: space-between
+
+    &__text-by
+        font-size: 18px
+
+    &__title-by
+        font-size: 18px
+        font-weight: bold
+        margin-right: 4px
+    &__vector
+        vertical-align: middle
+     
+    
+
+
+    
+    
+
